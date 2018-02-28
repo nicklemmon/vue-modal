@@ -1,0 +1,29 @@
+:root {
+  --spacingXs: 0.25rem;
+  --spacingSm: 0.5rem;
+  --spacingMd: 1rem;
+  --spacingLg: 2rem;
+  --spacingXl: 4rem;
+  --fontSizeXs: 0.75rem;
+  --fontSizeSm: 1rem;
+  --fontSizeMd: 1.333rem;
+  --fontSizeLg: 1.777rem;
+  --fontSizeXl: 2.369rem;
+  --animDur: 0.25s;
+  --animEasing: cubic-bezier(0, 0, 0, 2);
+  --zIndexLowest: -2;
+  --zIndexLow: -1;
+  --zIndexMid: 0;
+  --zIndexHigh: 1;
+  --zIndexHighest: 2;
+  --borderRadius: 0.25rem;
+}
+
+:root,
+.theme-primary {
+  --background: #F7F7F7;
+  --foreground: #0F0F28;
+  --middleground: #429CD8;
+  --highlight: #3151A6;
+  --accent: #6868B1;
+}
