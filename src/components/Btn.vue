@@ -1,6 +1,10 @@
 <template>
   <button class="btn" :class="type" v-on:click="clickHandler">
     {{ content }}
+
+    <span class="u-sr-only" v-if="screenReaderPostContent">
+      {{ screenReaderPostContent }}
+    </span>
   </button>
 </template>
 
@@ -10,7 +14,8 @@
     props: [
       'type',
       'content',
-      'clickHandler'
+      'clickHandler',
+      'screenReaderPostContent'
     ]
   }
 </script>

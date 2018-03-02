@@ -1,5 +1,5 @@
 <template>
-  <div class="modal" v-bind:class="{ open: isOpen }" :aria-hidden="isOpen ? false : true" role="dialog" v-on:keyup.esc="close">
+  <div class="modal" v-bind:class="{ open: isOpen }" :aria-hidden="isOpen ? false : true" role="dialog">
     <button class="modalClose" aria-label="Close" v-on:click="close">
       <Icon class="modalCloseIcon" name="times"></Icon>
     </button>

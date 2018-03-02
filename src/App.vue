@@ -27,7 +27,12 @@
   import ModalBtn from './components/ModalBtn.vue'
 
   export default {
-    name: 'app',
+    name: 'App',
+    data() {
+      return {
+        keyCode: ''
+      }
+    },
     components: {
       Modal,
       Overlay,

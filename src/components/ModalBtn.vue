@@ -3,6 +3,7 @@
     :type="btnType"
     :content="btnContent"
     :clickHandler="openModal"
+    screenReaderPostContent="Opens a dialog"
   />
 </template>
 
