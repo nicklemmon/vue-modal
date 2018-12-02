@@ -40,3 +40,15 @@ h6 {
   clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
   overflow: hidden;
 }
+
+/* disable the global focus... */
+*:focus {
+  outline: 0;
+}
+
+/* ...enable the custom focus */
+button:focus,
+[tabindex="0"]:focus,
+[href]:focus {
+  outline: 1px dashed currentColor;
+}

@@ -1,6 +1,6 @@
 <template>
   <div class="modal" v-bind:class="{ open: isOpen }" :aria-hidden="isOpen ? false : true" role="dialog">
-    <button class="modalClose" aria-label="Close" v-on:click="close">
+    <button class="modalClose" aria-label="Close" v-on:click="close" tabindex="0">
       <Icon class="modalCloseIcon" name="times"></Icon>
     </button>
 
@@ -42,9 +42,6 @@
         this.isOpen = false
 
         this.$root.$emit( 'modal-close' )
-      },
-      trapFocus() {
-        console.log( 'Modal.trapFocus' )
       }
     },
     mounted() {
